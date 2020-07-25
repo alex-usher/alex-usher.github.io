@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Programming Projects - Alex W. Usher</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Dorsa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Adjusting some styles for the page -->
+  <style>
+    header {
+      min-height: 0;
+      padding: 2rem 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="min-height: 0;">
+    <div class="heading-container">
+      <h1 class="heading">Alex W. Usher</h1>
+      <p class="sub-heading">Computing Student, Imperial College London</p>
+      <nav class="fade-in">
+        <a href="experience.html">Skills & Experience</a>
+        <a href="projects.html">Projects</a>
+        <a class="highlight" href="UsherAlex.pdf" target="_blank">View my CV</a>
+      </nav>
+    </div>
+  </header>
+  <div class="content-wrapper">
+    <div class="content-container white-bg">
+      <h2 class="content-heading">Projects</h2>
+      <div class="project">
+        <h3 class="project-heading">Website Manager</h3>
+        <span class="project-subheading">Imperial College Symphony Orchestra | April 2020 - August 2021</span>
+        <div class="project-column-wrapper">
+          <div class="project-column">
+            <a href="https://www.union.ic.ac.uk/arts/orchestra/" target="_blank">
+              <img src="assets/images/icso.png" alt="ICSO home page" />
+            </a>
+          </div>
+          <div class="project-column">
+            <ul class="project-details">
+              <li><b>Description: </b>Managing the Imperial College Symphony Orchestra Website.</li>
+              <li><b>Tasks: </b>Keeping existing content up to date, adding new content/pages as requested and maintaining a consistent, modern style.</li>
+              <li><b>Improvements: </b>The website was messy when I took over, storing old versions of the website in its file tree. This was removed and the entire website
+                tidied. The page templates are now being taken and converted to Django to allow for the addition of a members area onto the site.
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <h3 class="project-heading">Genetic Stocks</h3>
+        <span class="project-subheading">Imperial College London | June 2020</span>
+        <div class="project-column-wrapper">
+          <div class="project-column">
+            <a href="https://github.com/lagercat/genetic_stocks/" target="_blank">
+              <img src="assets/images/geneticstocks-transparentbg.png" alt="Genetic Stocks Predicted Price vs. Close Price" />
+            </a>
+          </div>
+          <div class="project-column">
+            <ul class="project-details">
+              <li><b>Description: </b>A multilayer perceptron trained, using a genetic algorithm, to predict stock prices given a file containing historical stock data for a
+                company (the training data). Coded in C and produced by a group of 4 members.</li>
+              <li><b>Challenges: </b>For this project we had a very limited time scale - around 10 days - and so we had to choose an implementation that would be effective
+                but also implementable within the given time period. We also had to choose suitable activation functions for the layers of the perceptron,
+                so as to avoid vanishing gradients.</li>
+              <li><b>Improvements: </b>An LSTM network would have been a more suitable choice of neural network for this application, but time constraints did not give time for this.
+                We also wanted to let the genetic algorithm control the weight initialisation of the networks, since two networks with the same dimensions but
+                different weights could have very different fitness scores.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <h3 class="project-heading">A.U. Finance</h3>
+        <span class="project-subheading">Personal Project | June 2019 - September 2019 / Revisited February 2020</span>
+        <div class="project-column-wrapper">
+          <div class="project-column">
+            <a href="https://github.com/alex-usher/AWFinance/" target="_blank">
+              <img src="assets/images/app1.jpg" alt="A.U. Finance Home Screen" />
+              <img src="assets/images/app2.jpg" alt="A.U. Finance Budgets Page" />
+            </a>
+          </div>
+          <div class="project-column">
+            <ul class="project-details">
+              <li><b>Description: </b>An Android application for managing finances easily, by defining budgets and their frequency, and adding transactions
+                which can be categorised into a particular budget.</li>
+              <li><b>Challenges: </b>This was the first time I had used SQLite databases with Android, so it took a little bit of research to learn the required syntaxes
+                and get the database working how I desired. Although the overall design of the app isn't bad, it could certainly be improved - there are
+                a few small issues in the core design here and there that I could have avoided if I redid the whole project now.</li>
+              <li><b>Improvements: </b>I revisited the application primarily because I knew it was a little messy and that the database structure could be improved - at the time
+                I first made it I did not have enough experience to be able to structure it effectively. So on the revisit I significantly improved the database
+                and also tidied some of the code, although I still feel areas handling dynamic content creation could be tidier.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <h3 class="project-heading">Baines Gardening</h3>
+        <span class="project-subheading">Website for Client | July 2017</span>
+        <div class="project-column-wrapper">
+          <div class="project-column">
+            <a href="https://www.bainesgardening.com/" target="_blank">
+              <img src="assets/images/bgardening.jpg" alt="Baines Gardening Home Page" />
+            </a>
+          </div>
+          <div class="project-column">
+            <ul class="project-details">
+              <li><b>Description: </b>A website created during my internship at Oracle Creative Media Ltd. for a client specialising in garden maintenance.</li>
+              <li><b>Tasks: </b>The website was created with OCM's own CMS as the backend, working with the client to create the design. It had to be designed such that content could be
+                                changed by the client, and that any maintenance could be carried out by OCM after the internship ended.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logos">
+      <a href="mailto:alex_usher@outlook.com">
+        <img class="svg" src="assets/images/email.svg" alt="Email Me" />
+      </a>
+      <a href="https://www.linkedin.com/in/alex-usher/">
+        <img class="svg" src="assets/images/linkedin.svg" alt="LinkedIn: alex-usher" />
+      </a>
+      <a href="https://github.com/alex-usher">
+        <img class="svg" src="assets/images/github.svg" alt="Github: alex-usher" />
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
