@@ -277,6 +277,10 @@ div#programming-languages ul {
     width: 100%;
     justify-content: center;
   }
+
+  div.project-column a img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -316,6 +320,17 @@ div#programming-languages ul {
   }
 }
 
+@media screen and (max-width: 400px) {
+  div.project-column a {
+    flex-wrap: wrap;
+  }
+
+  div.project-column a img {
+    padding: 0;
+    width: 100%;
+  }
+}
+
 /**************** FOOTER **********************/
 footer {
   border-top: 1px solid rgba(245, 245, 245, 0.8);
@@ -337,7 +352,7 @@ footer {
 .svg {
   filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(266deg) brightness(116%) contrast(92%);
   transition: all 1s ease;
-  min-width: 1.5rem;
+  width: 1.5rem;
 }
 
 .svg:hover {
