@@ -326,7 +326,7 @@ div#programming-languages ul {
   }
 
   div.project-column a img {
-    padding: 0;
+    padding: 0.1em 0;
     width: 100%;
   }
 }
